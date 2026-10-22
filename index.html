@@ -2,20 +2,34 @@
 <html lang="ro">
 <head>
     <meta charset="UTF-8">
-    <title>Laborator 2 SOPM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laborator 3 SOPM - JavaScript & DOM</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Proiect SOPM</h1>
-    <p>Acesta este proiectul ptr laboratorul de SOPM</p>
-    <section><h2>Despre echipă</h2><p>Echipa noastră...</p></section>
-    <p>Obiectivele noastre :</p>
-    <li>
-        1.
-        2.
-        3.
-        4.
-        5.
-    </li>
+    <div id="progress-bar"></div>
+
+    <header>
+        <h1>Laborator 3 - The Action</h1>
+        <button id="theme-toggle">Schimbă Tema (Dark/Light)</button>
+    </header>
+    <main>
+        <section>
+            <h2>Geolocalizare (API)</h2>
+            <button onclick="getLocation()">Află locația mea</button>
+            <p id="geo-output"></p>
+        </section>
+
+        <section>
+            <h2>Citatul Zilei (API Extern)</h2>
+            <button id="get-quote-btn">Incarcă un citat</button>
+            <p id="quote-output">Apasă butonul pentru a primi un citat...</p>
+        </section>
+        <section class="hidden-box" id="animated-section">
+            <h2>Secțiune Animată</h2>
+            <p>Această secțiune apare cu un efect când faci scroll până la ea!</p>
+        </section>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
